@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./content/back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+.calculator {
+    height: 550px;
+    width: 320px;
+    backdrop-filter: blur(5rem);
+    border-radius: 1.5rem;
+    box-shadow: .1rem .1rem 2rem black;
+}
+
+.display {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.display div {
+    margin: .5rem 2rem 0 0;
+}
+
+.display span {
+    color: #1096F4;
+    margin: 0 .5rem;
+}
+
+.display .braces {
+    color: #f410ce;
+}
+
+.input {
+    font-size: x-large;
+}
+
+.output {
+    font-size: xx-large;
+    margin-bottom: 1rem;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.key {
+    width: 20%;
+    aspect-ratio: 1;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 2px white;
+}
+
+.key:active {
+    opacity: 0.5;
+}
+
+.command,
+.operation {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.operation {
+    color: #1096F4;
+}
+
+.command {
+    color: #f410ce;
+}
